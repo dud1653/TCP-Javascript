@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Window 객체의 alert() 메소드</h1>
+    <button onclick="alertDialogBox()">alert 대화 상자</button>
+    
+    <h1>HTML DOM 요소를 이용한 innerHTML 프로퍼티</h1>
+    <p id="text">이 문장을 바꿀 것입니다!</p>
+    <button onclick="changeText()">문장 바꾸기</button>
+    
+    <h1>Document 객체의 write() 메소드</h1>
+    <script>
+        /*
+            자바스크립트 출력
+            1. window.alert() 메소드
+            2. HTML DOM 요소를 이용한 innerHTML 프로퍼티
+            3. document.write() 메소드
+            4. console.log() 메소드
+        */
+
+        // 1. window.alert()
+        function alertDialogBox() {
+            alert('확인을 누를 때까지 다른 작업을 할 수 없어요!')
+        }
+
+
+        // 2. HTML DOM 요소를 이용한 innerHTML 프로퍼티
+        function changeText() {
+            var str = document.getElementById('text')
+            str.innerHTML = '이 문장으로 바뀌었습니다!'
+        }
+
+        // 3. document.write()
+        document.write('document.write() 메소드')
+
+        // 4. console.log() 메소드
+        console.log('f12를 눌러서 확인')
+    </script>
+</body>
+</html>
+ 

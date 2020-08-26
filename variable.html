@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>변수의 선언과 초기화</h1>
+    <p id="vari"></p>
+
+    <h1>같은 변수에 다른 타입의 값 할당</h1>
+    <p id="type"></p>
+
+    <h1>초기화하지 않은 변수의 값</h1>
+    <p id="unde"></p>
+    <script>
+        // 변수란 데이터를 저장할 수 있는 메모리 공간
+
+        //변수의 선언과 초기화
+        var month // 변수의 선언
+        var date = 25 // 변수의 선언과 동시에 초기화
+        month = 12
+        vari.innerHTML = "크리스마스는 " + month + "월 " + date + "일입니다."
+
+        // 변수의 타입과 초깃값
+        var num = 10; // 변수의 선언과 함께 초기화
+        type.innerHTML = "num : " + num + "<br>"
+        num = [10, 20, 30] // 배열 할당
+        type.innerHTML += "num : " + num + "<br>"
+        var num // 재선언문은 무시
+        type.innerHTML += "num : " + num
+
+        // 초기화하지 않은 변수의 값
+        var undef // 선언만
+        unde.innerHTML = "undef : " + undef + "<br>" 
+    </script>
+</body>
+</html>
